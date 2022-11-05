@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Bamboo</string>
     <string name="how_are_you_nfeeling_today">how are you\nfeeling today?</string>
+    <string name="onboarding_hellp">My name is Bamboo and I’m here to help you improve your mental health by using your phone smarter</string>
+    <string name="pick_feelings">Could you please pick 3 feelings from each category which you associate with the most.</string>
 </resources>

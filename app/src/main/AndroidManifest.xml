@@ -14,26 +14,34 @@
         android:theme="@style/Theme.Bamboo"
         tools:targetApi="31">
         <activity
-            android:name=".Insights"
-            android:exported="true" />
-        <activity
-            android:name=".FeelsBadActivity"
+            android:name=".onboarding.ChooseFeelingsActivity"
             android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".FeelingGoodActivity"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".onboarding.RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Insights"
+            android:exported="true" />
+        <activity
+            android:name=".FeelsBadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeelingGoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

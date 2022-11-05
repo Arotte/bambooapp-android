@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".onboarding.ChooseFeelingsActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brilliant, Peter!"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:textSize="40sp"
+        android:textColor="@color/bbgreen"
+        android:textFontWeight="800"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/pick_feelings"
+        android:textColor="@color/bbgreen"
+        android:textSize="21sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPositiveFeelings"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+        android:layout_marginTop="35dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNegativeFeelings"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+         />
+
+</LinearLayout>

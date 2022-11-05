@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnFeeling"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    app:cornerRadius="40dp"
+    android:text="Happy"
+    android:backgroundTint="@color/bbbeige"
+    android:textColor="@color/bbgreen"
+    android:layout_marginStart="4dp"
+    app:strokeColor="@color/bbgreen"
+    app:strokeWidth="1dp"
+    android:layout_marginEnd="4dp"
+    />
+
+</LinearLayout>

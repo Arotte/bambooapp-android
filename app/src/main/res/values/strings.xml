@@ -3,4 +3,6 @@
     <string name="how_are_you_nfeeling_today">how are you\nfeeling today?</string>
     <string name="onboarding_hellp">My name is Bamboo and I’m here to help you improve your mental health by using your phone smarter</string>
     <string name="pick_feelings">Could you please pick 3 feelings from each category which you associate with the most.</string>
+    <string name="pick_hobbies">Could you please pick up to 5 hobbies that interest you?</string>
+    <string name="select_imgs">To help me cheer you up in the future, please select 5 images that you like</string>
 </resources>

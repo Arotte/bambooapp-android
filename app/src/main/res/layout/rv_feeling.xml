@@ -7,18 +7,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-<com.google.android.material.button.MaterialButton
-    android:id="@+id/btnFeeling"
-    android:layout_width="150dp"
-    android:layout_height="wrap_content"
-    app:cornerRadius="40dp"
-    android:text="Happy"
-    android:backgroundTint="@color/bbbeige"
-    android:textColor="@color/bbgreen"
-    android:layout_marginStart="4dp"
-    app:strokeColor="@color/bbgreen"
-    app:strokeWidth="1dp"
-    android:layout_marginEnd="4dp"
-    />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFeeling"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/bbbeige"
+        android:text="Happy"
+        android:textColor="@color/bbgreen"
+        app:cornerRadius="40dp"
+        app:strokeColor="@color/bbgreen"
+        app:strokeWidth="1dp" />
 
 </LinearLayout>

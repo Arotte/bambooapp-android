@@ -21,9 +21,6 @@ import com.google.android.material.button.MaterialButton;
 
 public class FeelingsRVAdapter extends RecyclerView.Adapter<FeelingsRVAdapter.ViewHolder> {
 
-
-
-
     private final List<String> data;
     private final LayoutInflater mInflater;
     private FeelingsRVAdapter.ItemClickListener mClickListener;
@@ -50,11 +47,6 @@ public class FeelingsRVAdapter extends RecyclerView.Adapter<FeelingsRVAdapter.Vi
         holder.btnFeeling.setText(feeling);
     }
 
-    public String getURLForResource (int resourceId) {
-        //use BuildConfig.APPLICATION_ID instead of R.class.getPackage().getName() if both are not same
-        return Uri.parse("android.resource://"+R.class.getPackage().getName()+"/" +resourceId).toString();
-    }
-
     // total number of rows
     @Override
     public int getItemCount() {
@@ -68,9 +60,10 @@ public class FeelingsRVAdapter extends RecyclerView.Adapter<FeelingsRVAdapter.Vi
 
         ViewHolder(View itemView) {
             super(itemView);
-            btnFeeling   = itemView.findViewById(R.id.btnFeeling);
+            btnFeeling = itemView.findViewById(R.id.btnFeeling);
 
-            itemView.setOnClickListener(this);
+            // itemView.setOnClickListener(this);
+            btnFeeling.setOnClickListener(this);
         }
 
         @Override

@@ -35,6 +35,9 @@ dependencies {
 
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
+    // Picasso: loads images from web URLs
+// Source: https://square.github.io/picasso/
+    implementation 'com.squareup.picasso:picasso:2.8'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

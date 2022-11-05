@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
@@ -33,16 +34,24 @@ public class Insights extends AppCompatActivity
 
         // set values of tvFX, tvFXInfo
         ((TextView)findViewById(R.id.tvF1)).setText(dummyData2.get(0).feeling);
-        ((TextView)findViewById(R.id.tvF1Info)).setText("You have felt like this " + dummyData2.get(0).nFeeled + " times using " + dummyData2.get(0).appName);
+        ((TextView)findViewById(R.id.tvF1Info)).setText(Html.fromHtml(
+                "You have felt like this<br/><b>" + dummyData2.get(0).nFeeled + "</b> times using <b>" + dummyData2.get(0).appName + "</b>"
+        ));
 
         ((TextView)findViewById(R.id.tvF2)).setText(dummyData2.get(1).feeling);
-        ((TextView)findViewById(R.id.tvF2Info)).setText("You have felt like this " + dummyData2.get(1).nFeeled + " times using " + dummyData2.get(1).appName);
+        ((TextView)findViewById(R.id.tvF2Info)).setText(Html.fromHtml(
+                "You have felt like this<br/><b>" + dummyData2.get(1).nFeeled + "</b> times using <b>" + dummyData2.get(1).appName + "</b>"
+        ));
         
         ((TextView)findViewById(R.id.tvF3)).setText(dummyData2.get(2).feeling);
-        ((TextView)findViewById(R.id.tvF3Info)).setText("You have felt like this " + dummyData2.get(2).nFeeled + " times using " + dummyData2.get(2).appName);
+        ((TextView)findViewById(R.id.tvF3Info)).setText(Html.fromHtml(
+                "You have felt like this<br/><b>" + dummyData2.get(2).nFeeled + "</b> times using <b>" + dummyData2.get(2).appName + "</b>"
+        ));
 
         ((TextView)findViewById(R.id.tvF4)).setText(dummyData2.get(3).feeling);
-        ((TextView)findViewById(R.id.tvF4Info)).setText("You have felt like this " + dummyData2.get(3).nFeeled + " times using " + dummyData2.get(3).appName);
+        ((TextView)findViewById(R.id.tvF4Info)).setText(Html.fromHtml(
+                "You have felt like this<br/><b>" + dummyData2.get(3).nFeeled + "</b> times using <b>" + dummyData2.get(3).appName + "</b>"
+        ));
 
     }
 

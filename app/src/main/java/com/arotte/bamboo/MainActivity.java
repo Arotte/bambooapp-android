@@ -2,7 +2,9 @@ package com.arotte.bamboo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,10 +15,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String CHANNEL_ID = "123";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Notif.createChannel(this);
 
         List<MaterialButton> positive = new ArrayList<>();
         List<MaterialButton> negative = new ArrayList<>();
@@ -41,8 +47,13 @@ public class MainActivity extends AppCompatActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(MainActivity.this, FeelsBadActivity.class));
+                    // startActivity(new Intent(MainActivity.this, FeelsBadActivity.class));
+
+                    Notif.notify(MainActivity.this, "Test", "Test", MainActivity.class);
                 }
             });
     }
+
+
+
 }

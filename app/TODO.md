@@ -1,7 +1,7 @@
 # TODO
 
 * add navbar
-* add recs and generated images to feelingbad activity
+* add recs and generated images to feeling bad activity
 * create general section of insights page
 
 * create if you feel down page from figma

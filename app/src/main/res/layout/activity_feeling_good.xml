@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeelingGoodActivity"
+    android:background="@color/bbwhite">
+
+    <TextView
+        android:id="@+id/tvGreatJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazing!"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:textSize="40sp"
+        android:textColor="@color/bbgreen"
+        android:textFontWeight="800"/>
+
+
+<!--    Emoji: &#128522;-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="Thanks for\nsharing\nthis with me "
+        android:textColor="@color/bbgreen"
+        android:textFontWeight="550"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGreatJob" />
+
+    <ImageView
+        android:id="@+id/ivBamboo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_asset_2concerned"
+        android:layout_marginEnd="-60sp"
+        android:layout_marginTop="190sp"
+        android:rotation="330"
+        />
+
+    <ImageButton
+        android:id="@+id/ibtnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_group_14"
+        android:backgroundTint="@color/bbwhite">
+    </ImageButton>
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:src="@drawable/ic_group_14"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

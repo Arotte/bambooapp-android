@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bbwhite">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there,"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:textSize="40sp"
+        android:textColor="@color/bbgreen"
+        android:textFontWeight="800"
+        />
+
+
+    <TextView
+        android:id="@+id/tvHelloMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/how_are_you_nfeeling_today"
+        android:textColor="@color/bbgreen"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHello"
+        />
+
+
+    <ImageView
+        android:id="@+id/ivBamboo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_asset_2concerned"
+        android:layout_marginRight="-60sp"
+        android:layout_marginTop="190sp"
+        android:rotation="330"
+        />
+
+    <LinearLayout
+        android:id="@+id/llFeelingsR3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/llFeelingsR2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHappy"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Happy"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcited"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Excited"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llFeelingsR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/llFeelingsR1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSad"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Sad"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAngry"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Angry"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFeelingsR1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSuprised"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Suprised"
+            app:cornerRadius="40dp"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTired"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Tired"
+            app:cornerRadius="50dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insights"
+    android:background="@color/bbwhite">
+
+    <LinearLayout
+        android:id="@+id/llTopCtrls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGeneral"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/bbbeige"
+            android:textColor="@color/bbgreen"
+            android:fontFamily="@font/roboto"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWeekly"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/bbbeige"
+            android:textColor="@color/bbgreen"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvWeeklyInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llTopCtrls"
+        android:layout_marginTop="7dp"
+        android:text="20 to 27 of Nov 2022"
+        android:textColor="@color/bbgreen"
+        android:fontFamily="@font/roboto"
+        />
+
+    <TextView
+        android:id="@+id/tvTop3Apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 3 apps used"
+        app:layout_constraintTop_toBottomOf="@id/tvWeeklyInterval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="35dp"
+        android:textColor="@color/bbgreen"
+        android:textFontWeight="800"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvTop3Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTop3Apps"
+        android:text="How many times have I felt this way and what is the\naverage time I spent in the app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/bbgreen"
+        android:fontFamily="@font/roboto"
+        />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:background="@color/bbgreen"
+        app:layout_constraintTop_toBottomOf="@id/tvTop3Desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTop3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/vLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

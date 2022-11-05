@@ -50,7 +50,7 @@ public class ChooseFeelingsActivity extends AppCompatActivity
         rv.setAdapter(positiveAdapter);
 
         // set  recyclerview
-        data = getPositiveFeelings();
+        data = getNegativeFeelings();
         rv = findViewById(R.id.rvNegativeFeelings);
         rv.setNestedScrollingEnabled(false);
         rv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));

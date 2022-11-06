@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="20 to 27 of Nov 2022"
+        android:text="20. - 27. Nov 2022"
         android:textColor="@color/bbgreen"
         android:fontFamily="@font/roboto"
         />

@@ -17,7 +17,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="60dp"
         android:layout_marginStart="40dp"
-        android:textSize="40sp"
+        android:textSize="45sp"
         android:textColor="@color/bbgreen"
         android:textFontWeight="800"/>
 
@@ -33,6 +33,7 @@
         android:textColor="@color/bbgreen"
         android:textFontWeight="550"
         android:textSize="30sp"
+        android:lineHeight="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvGreatJob" />
 

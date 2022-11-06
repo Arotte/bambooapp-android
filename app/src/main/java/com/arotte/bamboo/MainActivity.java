@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         Notif.createChannel(this);
+        Notif.notify(MainActivity.this, "Hello from Bamboo!", "Sorry for the intrusion, might I ask how are you feeling?", MainActivity.class);
 
         List<MaterialButton> positive = new ArrayList<>();
         List<MaterialButton> negative = new ArrayList<>();

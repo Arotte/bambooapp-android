@@ -41,13 +41,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginStart="40dp"
                     android:fontFamily="@font/roboto"
                     android:text="Maybe you\ncould look at \nthese to help\nbring up \nyour mood?"
                     android:textColor="@color/bbgreen"
                     android:textFontWeight="550"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
+                    android:lineHeight="35sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvWorry" />
 

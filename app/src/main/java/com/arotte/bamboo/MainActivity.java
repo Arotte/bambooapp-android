@@ -58,6 +58,15 @@ public class MainActivity extends AppCompatActivity
                     // Notif.notify(MainActivity.this, "Test", "Test", MainActivity.class);
                 }
             });
+
+
+        // getting bottom navigation view and attaching the listener
+        navigation = findViewById(R.id.bottom_navigation);
+        navigation.setOnNavigationItemSelectedListener(this);
+
+        // fix shadow on bottom navbar
+//        navigation.setBackground(null);
+//        navigation.setSelectedItemId(R.id.bottomNavbarHome);
     }
 
 

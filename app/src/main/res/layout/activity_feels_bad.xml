@@ -2,50 +2,193 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FeelsBadActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FeelsBadActivity"
     android:background="@color/bbwhite">
 
-    <TextView
-        android:id="@+id/tvWorry"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't worry!"
-        android:fontFamily="@font/roboto"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="40dp"
-        android:textSize="40sp"
-        android:textColor="@color/bbgreen"
-        android:textFontWeight="800"/>
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvWorry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't worry!"
+                    android:fontFamily="@font/roboto"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="40dp"
+                    android:textSize="40sp"
+                    android:textColor="@color/bbgreen"
+                    android:textFontWeight="800"/>
 
 
-    <!--    Emoji: &#128522;-->
-    <TextView
-        android:layout_width="wrap_content"
+                <!--    Emoji: &#128522;-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Maybe you\ncould look at \nthese to help\nbring up \nyour mood?"
+                    android:textColor="@color/bbgreen"
+                    android:textFontWeight="550"
+                    android:textSize="30sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWorry" />
+
+                <ImageView
+                    android:id="@+id/ivBamboo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="330dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/bamboo4concerned"
+                    android:layout_marginRight="-195sp"
+                    android:layout_marginTop="70sp"
+                    android:rotation="330"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/advice131"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Test Advice 1"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/bbgreen"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/bbgreen"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/advice131"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Test Advice 2"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/bbgreen"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/bbgreen"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/advice131"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Test Advice 3"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/bbgreen"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/bbgreen"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_feelbad"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="40dp"
-        android:fontFamily="@font/roboto"
-        android:text="Maybe you\ncould look at \nthese to help\nbring up \nyour mood?"
-        android:textColor="@color/bbgreen"
-        android:textFontWeight="550"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvWorry" />
-
-    <ImageView
-        android:id="@+id/ivBamboo"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/bamboo4concerned"
-        android:layout_marginRight="-180sp"
-        android:layout_marginTop="190sp"
-        android:rotation="330"
-        />
+        app:menu="@menu/custom_bottom_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

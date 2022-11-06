@@ -20,7 +20,7 @@ public class FeelingGoodActivity extends AppCompatActivity {
         ((ImageButton)findViewById(R.id.ibtnCheck)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FeelingGoodActivity.this, Insights.class));
+                startActivity(new Intent(FeelingGoodActivity.this, MainActivity.class));
             }
         });
     }

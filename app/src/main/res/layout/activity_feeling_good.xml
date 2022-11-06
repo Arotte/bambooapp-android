@@ -44,16 +44,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/bamboo2concerned"
         android:layout_marginRight="-180sp"
-        android:layout_marginTop="190sp"
+        android:layout_marginTop="150sp"
         android:rotation="330"
         />
 
     <ImageButton
         android:id="@+id/ibtnCheck"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_feelgood"
         app:layout_constraintLeft_toLeftOf="parent"
         android:src="@drawable/ic_group_14"
         android:backgroundTint="@color/bbwhite">
@@ -68,5 +69,12 @@
 <!--        android:src="@drawable/ic_group_14"-->
 <!--        android:layout_marginBottom="30dp"-->
 <!--        />-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_feelgood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/custom_bottom_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

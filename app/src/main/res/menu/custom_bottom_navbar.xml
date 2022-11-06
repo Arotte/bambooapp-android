@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/bottomNavbarHome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/bbgreen"/>
+
+    <item android:id="@+id/bottomNavbarInsight"
+        android:title="Insight"
+        android:icon="@drawable/ic_baseline_account_balance_24"
+        android:iconTint="@color/black"/>
+
+    <!--    Upload button-->
+    <!--    <item android:id="@+id/bottomNavbarUpload"-->
+    <!--        android:title="New Recipe"-->
+    <!--        android:icon="@drawable/ic_upload"-->
+    <!--        android:iconTint="@color/textSecondary"/>-->
+
+    <!--    Center action button-->
+    <!--    <item android:id="@+id/placeholder"-->
+    <!--        android:title=""-->
+    <!--        android:enabled="false"/>-->
+
+    <item android:id="@+id/bottomNavbarAdvice"
+        android:title="Advice"
+        android:icon="@drawable/ic_baseline_add_reaction_24"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/bottomNavbarSettings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="@color/black"/>
+</menu>

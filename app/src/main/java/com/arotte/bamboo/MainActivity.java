@@ -63,30 +63,29 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.bottomNavbarHome:
+                // startActivity(new Intent(MainActivity.this, .class));
+                return false;
+
+            case R.id.bottomNavbarInsight:
+                startActivity(new Intent(MainActivity.this, Insights.class));
+
+            case R.id.bottomNavbarAdvice:
+                // startActivity(new Intent(MainActivity.this, AdviceActivity.class));
+                return false;
+
+            case R.id.bottomNavbarSettings:
+                // startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+                return false;
+
+            // case R.id.bottomNavbarUpload:
+            //    startActivity(new Intent(MainActivity.this, UploadActivity.class));
+            //    break;
+        }
+
+
         return false;
-
-
-//        switch (item.getItemId()) {
-//            case R.id.bottomNavbarHome:
-//                fragment = new HomeFragment();
-//                break;
-//
-//            case R.id.bottomNavbarProfile:
-//                fragment = new ProfileFragment();
-//                break;
-//
-//            case R.id.bottomNavbarSearch:
-//                fragment = new SearchFragment();
-//                break;
-//
-//
-//            case R.id.bottomNavbarCookbook:
-//                fragment = new CookbookFragment();
-//                break;
-//
-//            // case R.id.bottomNavbarUpload:
-//            //    startActivity(new Intent(MainActivity.this, UploadActivity.class));
-//            //    break;
-//        }
     }
 }

@@ -39,15 +39,16 @@
 
                 <!--    Emoji: &#128522;-->
                 <TextView
+                    android:id="@+id/tvBadFeelingTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginStart="40dp"
                     android:fontFamily="@font/roboto"
                     android:text="Maybe you\ncould look at \nthese to help\nbring up \nyour mood?"
                     android:textColor="@color/bbgreen"
                     android:textFontWeight="550"
-                    android:textSize="30sp"
+                    android:textSize="22sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvWorry" />
 
@@ -59,127 +60,136 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:src="@drawable/bamboo4concerned"
-                    android:layout_marginRight="-195sp"
+                    android:layout_marginRight="-210sp"
                     android:layout_marginTop="70sp"
                     android:rotation="330"
                     />
 
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dalledoggo"
+                    android:layout_marginTop="20dp"
+                    />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginEnd="40dp">-->
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/advice131"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/advice131"/>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Test Advice 1"
-                        android:fontFamily="@font/roboto"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:textColor="@color/bbgreen"
-                        android:textSize="16dp"/>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Test Advice 1"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:textColor="@color/bbgreen"-->
+<!--                        android:textSize="16dp"/>-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/roboto"
-                        android:textColor="@color/bbgreen"/>
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textColor="@color/bbgreen"/>-->
+<!--                </LinearLayout>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginEnd="40dp">-->
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/advice131"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/advice131"/>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Test Advice 2"
-                        android:fontFamily="@font/roboto"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:textColor="@color/bbgreen"
-                        android:textSize="16dp"/>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Test Advice 2"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:textColor="@color/bbgreen"-->
+<!--                        android:textSize="16dp"/>-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/roboto"
-                        android:textColor="@color/bbgreen"/>
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textColor="@color/bbgreen"/>-->
+<!--                </LinearLayout>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="40dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginEnd="40dp">-->
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/advice131"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/advice131"/>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Test Advice 3"
-                        android:fontFamily="@font/roboto"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:textColor="@color/bbgreen"
-                        android:textSize="16dp"/>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Test Advice 3"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:textColor="@color/bbgreen"-->
+<!--                        android:textSize="16dp"/>-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/roboto"
-                        android:textColor="@color/bbgreen"/>
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Lorem isdm aspd madslfk fdsasd assad ew."-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:fontFamily="@font/roboto"-->
+<!--                        android:textColor="@color/bbgreen"/>-->
+<!--                </LinearLayout>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
+
 
         </LinearLayout>
     </ScrollView>

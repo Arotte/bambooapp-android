@@ -1,3 +1,5 @@
+**NOTE: Our back-end (Node.js) server source code lives at https://github.com/Andycko/bamboo-be**
+
 # Bamboo 
 
 This repository holds the source code for the Bamboo Mobile App. The app is built for android using Java and acts as a proof of concept before building the production version in Kotlin & Swift for Android & iOS respectively.
